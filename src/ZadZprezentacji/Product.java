@@ -1,3 +1,5 @@
+package ZadZprezentacji;
+
 public class Product {
     private String name;
     private String producer;

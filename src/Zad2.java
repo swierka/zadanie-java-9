@@ -32,22 +32,21 @@ public class Zad2 {
         }
 
 
-/*       //jaki jest blad w ponizszej petli? Zapisuje jedynie ostatnia liczbe
-
-           for (j = 0; j < Numbers.length; j++) {
-            try (
-                    FileWriter fileWriter = new FileWriter("MojeLiczby.txt");
-                    BufferedWriter writer = new BufferedWriter(fileWriter);
-            ) {
+        try (
+                FileWriter fileWriter = new FileWriter("MojeLiczby.txt");
+                BufferedWriter writer = new BufferedWriter(fileWriter);
+        ) {
+            for (j = 0; j < Numbers.length; j++) {
                 String numberAsString = Double.toString(Numbers[j]);
                 writer.write(numberAsString);
                 writer.newLine();
-            } catch (IOException exc) {
-                System.out.println("Nie mozna zapisac pliku");
             }
-        }*/
+        } catch (IOException exc) {
+            System.out.println("Nie mozna zapisac pliku");
+        }
+    }
 
-        try (
+/*        try (
                 FileWriter fileWriter = new FileWriter("MojeLiczby.txt");
                 BufferedWriter writer = new BufferedWriter(fileWriter);
         ) {
@@ -59,6 +58,5 @@ public class Zad2 {
             }
         } catch (IOException exc) {
             System.out.println("Nie mozna zapisac pliku");
-        }
-    }
+        }*/
 }

@@ -1,10 +1,12 @@
+package ZadZprezentacji;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class ScannerReader {
     public static void main(String[] args) {
-        String fileName = "Testowy.txt";
+        String fileName = "Testowy";
         File file = new File(fileName);
         try (Scanner scan = new Scanner(file)) {
             while(scan.hasNextLine()){

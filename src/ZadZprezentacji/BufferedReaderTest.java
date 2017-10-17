@@ -1,10 +1,12 @@
+package ZadZprezentacji;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class BufferedReaderTest {
     public static void main(String[] args) {
-        String fileName = "Testowy.txt";
+        String fileName = "Testowy";
 
         try (
                 FileReader fileReader = new FileReader(fileName);
